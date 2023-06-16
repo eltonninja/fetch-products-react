@@ -36,7 +36,7 @@ const ProductList: React.FC = () => {
     <div className="flex justify-center">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols- gap-4 my-10">
         {products.slice(0, 5).map((product: IProduct) => (
-          <Product {...product} imageUrl={product.images[0]} />
+          <Product {...product} imageUrl={product.images[0]} key={product.id} />
         ))}
       </div>
     </div>
